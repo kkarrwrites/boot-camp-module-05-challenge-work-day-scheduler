@@ -24,3 +24,8 @@ This project is licensed under the MIT License.
 
 - [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/) on jQuery
 - [.each()](https://api.jquery.com/each/) on jQuery
+- [.val()](https://api.jquery.com/val/) on jQuery
+
+### Web Storage API
+
+- [How to Use Local Storage with JavaScript](https://www.taniarascia.com/how-to-use-local-storage-with-javascript/) by Tania Rascia
