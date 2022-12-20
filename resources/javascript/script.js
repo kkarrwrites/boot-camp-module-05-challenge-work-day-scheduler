@@ -22,6 +22,7 @@ $(function () {
 
   // Acceptance Criteria: When I view the time blocks for that day, then each time block is color-coded to indicate whether it is in the past, present, or future
   $(timeBlockEl).each(function () {
+    // console.log($(this));
     let time = $(this).attr("id").split("-")[1]; // Array ["hour", "##"]
     if (time < currentHour) {
       $(this).addClass("past");
