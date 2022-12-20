@@ -1,6 +1,5 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+"use strict";
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -9,15 +8,44 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
+  ///////////////////////////////////////////////////////////////////////////////////
+  // Variable selectors
+  const currentDayEl = $("#currentDay");
+  const timeBlockEl = $(".time-block");
+  const saveButtonEl = $(".saveBtn");
+
+  // Other variables
+  const currentHour = dayjs().format("HH"); // 09-17
+
+  // Acceptance Criteria: When I view the time blocks for that day, then each time block is color-coded to indicate whether it is in the past, present, or future
+  $(timeBlockEl).each(function () {
+    let time = $(this).attr("id").split("-")[1]; // Array ["hour", "##"]
+    if (time < currentHour) {
+      $(this).addClass("past");
+    } else if (time === currentHour) {
+      $(this).addClass("present");
+    } else {
+      $(this).addClass("future");
+    }
+  });
+
+  // Acceptance Criteria: When I click into a time block, then I can enter an event
+  // Acceptance Criteria: When I click the save button for that time block, then the text for that event is saved in local storage
+  // Acceptance Criteria: When I refresh the page, then the saved events persist
+  saveButtonEl.on("click", function () {
+    let key = $(this).parent().attr("id").split("-")[1];
+    let value = $(this).parent().find(".description").val();
+    localStorage.setItem(key, value);
+  });
+
+  // Acceptance Criteria: When I open the planner, then the current day is displayed at the top of the calendar
+  function displayTime() {
+    const currentDate = dayjs().format("dddd, MMMM D, YYYY"); // Tuesday, December 20, 2022
+    currentDayEl.text(currentDate);
+  }
+
+  displayTime();
 });
