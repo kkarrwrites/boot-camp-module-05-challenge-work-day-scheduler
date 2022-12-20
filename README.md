@@ -4,7 +4,11 @@
 
 ## Description
 
+A jQuery coding challenge for UConn Boot Camp.
+
 ## Technologies
+
+HTML, CSS, Bootstrap, Google Fonts, JavaScript, jQuery, Web Storage API, Git, GitHub, VS Code, Chrome, Firefox
 
 ## Screenshot
 
@@ -22,6 +26,7 @@ This project is licensed under the MIT License.
 
 ### jQuery
 
+- [.addClass()](https://api.jquery.com/addClass/) on jQuery
 - [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/) on jQuery
 - [.each()](https://api.jquery.com/each/) on jQuery
 - [.val()](https://api.jquery.com/val/) on jQuery
