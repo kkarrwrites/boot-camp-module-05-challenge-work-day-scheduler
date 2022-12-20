@@ -39,6 +39,9 @@ $(function () {
     let key = $(this).parent().attr("id").split("-")[1];
     let value = $(this).parent().find(".description").val();
     localStorage.setItem(key, value);
+    if (value === "") {
+      localStorage.removeItem(key, value);
+    }
   });
 
   // Acceptance Criteria: When I open the planner, then the current day is displayed at the top of the calendar
