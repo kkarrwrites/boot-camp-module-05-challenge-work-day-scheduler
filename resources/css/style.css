@@ -1,10 +1,21 @@
+:root {
+  --font-family-fira-sans: "Fira Sans", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family-fira-sans);
   font-size: 16px;
+  font-weight: var(--font-weight-400);
 }
 
 header {
   text-align: center;
+}
+
+h1 {
+  font-weight: var(--font-weight-700);
 }
 
 .container-fluid {
