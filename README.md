@@ -12,7 +12,11 @@ HTML, CSS, Bootstrap, Google Fonts, JavaScript, jQuery, Web Storage API, Git, Gi
 
 ## Screenshot
 
+![README Screenshot](resources/images/readme-screenshot.jpg)
+
 ## Deployment
+
+[GitHub Pages](https://kkarrwrites.github.io/boot-camp-module-05-challenge-work-day-scheduler/)
 
 ## License
 
@@ -30,9 +34,13 @@ This project is licensed under the MIT License.
 - [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/) on jQuery
 - [.each()](https://api.jquery.com/each/) on jQuery
 - [.find()](https://api.jquery.com/find/) on jQuery
+- [.hide()](https://api.jquery.com/hide/) on jQuery
+- [.html()](https://api.jquery.com/html/) on jQuery
 - [jQuery Tutorials for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNUJ0j6ccnOAcJIPoTRpO4) by The Net Ninja
-- [.on()](https://api.jquery.com/on/)
+- [.on()](https://api.jquery.com/on/) on jQuery
 - [.parent()](https://api.jquery.com/parent/) on jQuery
+- [.show()](https://api.jquery.com/show/) on jQuery
+- [.text()](https://api.jquery.com/text/) on jQuery
 - [.val()](https://api.jquery.com/val/) on jQuery
 
 ### Web Storage API
