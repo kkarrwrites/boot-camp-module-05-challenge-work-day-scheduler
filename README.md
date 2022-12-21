@@ -2,9 +2,9 @@
 
 ## About
 
-## Description
-
 A jQuery coding challenge for UConn Boot Camp.
+
+## Description
 
 ## Technologies
 
