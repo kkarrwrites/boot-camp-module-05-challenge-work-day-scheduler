@@ -6,9 +6,11 @@ A jQuery coding challenge for UConn Boot Camp.
 
 ## Description
 
+For this project, I learned a lot about how to use the Day.js API and chain jQuery methods. I had the easiest time with the Day.js API, while I was most challenged by figuring out how to split arrays with jQuery.
+
 ## Technologies
 
-HTML, CSS, Bootstrap, Google Fonts, JavaScript, jQuery, Web Storage API, Git, GitHub, VS Code, Chrome, Firefox
+HTML, CSS, Bootstrap, Google Fonts, JavaScript, jQuery, Web Storage API, Day.js, Git, GitHub, VS Code, Chrome, Firefox
 
 ## Screenshot
 
