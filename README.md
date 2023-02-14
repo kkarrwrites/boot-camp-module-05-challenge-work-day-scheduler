@@ -2,7 +2,7 @@
 
 ## About
 
-A jQuery coding challenge for UConn Boot Camp.
+A jQuery coding challenge for Full Stack Coding Boot Camp.
 
 ## Description
 
